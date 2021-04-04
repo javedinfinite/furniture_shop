@@ -13,7 +13,7 @@ import MailIcon from '@material-ui/icons/Mail';
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 500,
   },
   fullList: {
     width: 'auto',
@@ -22,11 +22,13 @@ const useStyles = makeStyles({
 
 export default function TemporaryDrawer(props) {
   const classes = useStyles();
-  console.log(props.drawerState)
-  console.log(props.toggleDrawer)
  
   const list = () => (
     <div
+    //To decide width of Sidebar
+      className={classes.fullList}
+    //   className={classes.list}
+
       role="presentation"  
       onClick={props.toggleDrawer(false)}
       onKeyDown={props.toggleDrawer(false)}

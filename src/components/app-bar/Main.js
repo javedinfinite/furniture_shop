@@ -3,24 +3,23 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import TemporaryDrawer from '../side-bar/Main'
+// import TemporaryDrawer from '../side-bar/Main'
+import AppMenu from '../side-bar/AppMenu'
 
 //icons
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { PinDropSharp } from '@material-ui/icons';
 
 
 const useStyles = makeStyles((theme) => ({
     showMenuButton: {
-        [theme.breakpoints.between('sm','xl')]: { display: 'none' }
+        // [theme.breakpoints.between('sm','xl')]: { display: 'none' }
       },
   root: {
     flexGrow: 1,
-    backgroundColor: "pink" ,
+    backgroundColor: '#3f51b5' , //#3f51b5, blue, pink
     color: "white",
   },
   appBarButton: {
@@ -74,10 +73,14 @@ const ButtonAppBar = () => {
           </Typography>
         </Toolbar>
       </AppBar>
-    <TemporaryDrawer 
+    {/* <TemporaryDrawer 
         toggleDrawer={toggleDrawer}
         drawerState={leftMenu}
-    /> 
+    />  */}
+    <AppMenu
+            toggleDrawer={toggleDrawer}
+            drawerState={leftMenu}
+    />
     </div>
   );
 }
