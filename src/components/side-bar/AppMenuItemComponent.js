@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 import ListItem from '@material-ui/core/ListItem'
-// import { NavLink, NavLinkProps } from 'react-router-dom'
+import { NavLink, NavLinkProps, Link } from 'react-router-dom'
  
 const AppMenuItemComponent = props => {
   const { className, onClick, link, children } = props
@@ -23,7 +23,7 @@ const AppMenuItemComponent = props => {
       button
       className={className}
       children={children}
-    //   component=  {<NavLink exact {...props} innerRef={ref} />}
+      component=  {Link}
       to={link}
     />
   )
