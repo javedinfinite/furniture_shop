@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme =>
       },
     },
     menuItemIcon: {
-      color: '#97c05c',
+      color: '#3f51b5',
     },
   }),
 )

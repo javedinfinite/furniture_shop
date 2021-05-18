@@ -21,7 +21,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 const useStyles = makeStyles((theme) => ({
     showMenuButton: {
-        // [theme.breakpoints.between('sm','xl')]: { display: 'none' }
+        [theme.breakpoints.between('sm','xl')]: { display: 'none' }
       },
   root: {
     flexGrow: 1,
@@ -73,9 +73,10 @@ const ButtonAppBar = () => {
 
 
   return (
-      <div>
-      <AppBar className={classes.root} position="static"  >
-        <Toolbar>
+      <div style={{paddingBottom:'65px'}} >
+      <AppBar> 
+        
+        <Toolbar >
           <IconButton edge="start" onClick={toggleDrawer(true)} className={classes.showMenuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
@@ -92,7 +93,7 @@ const ButtonAppBar = () => {
             Categories
           </IconButton>
           <IconButton edge="start" component={Link} to="/newitems" className={classes.appBarButton} color="inherit" aria-label="menu">
-            New at Ragfurnhi
+            New at Rakfurnhi
           </IconButton>
  
           <IconButton edge="start"  className={classes.appBarButton} color="inherit" aria-label="menu" aria-controls="customized-menu" variant="contained" aria-haspopup="true" onClick={handleClick}>

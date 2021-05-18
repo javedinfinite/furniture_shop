@@ -6,6 +6,8 @@ import ButtonAppBar from './components/app-bar/Main'
 import { Switch, Route, HashRouter, BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/Home/Home'
 import Products from './components/Products/Products'
+import Footer from './components/Footer'
+import Error from './components/Error'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,17 +24,17 @@ function App() {
       <ButtonAppBar  /> 
       <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/Products" component={Products} />
-              {/* <Route path="/apj_academy" component={ApjAcademy} />
-              <Route path="/my_articles" component={MyArticles} />
-              <Route path="/heap_overflow" component={HeapOverflow} />
-              <Route path="/age_cal" component={AgeCal} />
-              <Route path="/time_cal" component={TimeCal} />
-              <Route path="/notes" component={Notes} />
-              <Route path="/about" component={About} />
-              <Route path="/logout" component={Home} /> */}
+              {/* <Route path="/Products" component={Error} />
+              <Route path="/offers" component={Error} />
+              <Route path="/categories" component={Error} />
+              <Route path="/newitems" component={Error} />
+              <Route path="/contact" component={Error} />
+              <Route path="/about" component={Error} /> */}
+              <Route component={Error}/>
+         
     </Switch>
   </div>
+  <Footer title="Follow us" description="We are dedicated to our customers"/>
   </HashRouter>
   );
 }
