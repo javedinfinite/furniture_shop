@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/furniture_shop/static/css/main.9b2d6fb6.chunk.css",
+    "main.js": "/furniture_shop/static/js/main.6d910515.chunk.js",
+    "main.js.map": "/furniture_shop/static/js/main.6d910515.chunk.js.map",
+    "runtime-main.js": "/furniture_shop/static/js/runtime-main.a5d37f61.js",
+    "runtime-main.js.map": "/furniture_shop/static/js/runtime-main.a5d37f61.js.map",
+    "static/js/2.e6798e63.chunk.js": "/furniture_shop/static/js/2.e6798e63.chunk.js",
+    "static/js/2.e6798e63.chunk.js.map": "/furniture_shop/static/js/2.e6798e63.chunk.js.map",
+    "static/js/3.5c049df7.chunk.js": "/furniture_shop/static/js/3.5c049df7.chunk.js",
+    "static/js/3.5c049df7.chunk.js.map": "/furniture_shop/static/js/3.5c049df7.chunk.js.map",
+    "index.html": "/furniture_shop/index.html",
+    "static/css/main.9b2d6fb6.chunk.css.map": "/furniture_shop/static/css/main.9b2d6fb6.chunk.css.map",
+    "static/js/2.e6798e63.chunk.js.LICENSE.txt": "/furniture_shop/static/js/2.e6798e63.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5d37f61.js",
+    "static/js/2.e6798e63.chunk.js",
+    "static/css/main.9b2d6fb6.chunk.css",
+    "static/js/main.6d910515.chunk.js"
+  ]
+}
