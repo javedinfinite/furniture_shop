@@ -8,6 +8,7 @@ import Home from './components/Home/Home'
 import Products from './components/Products/Products'
 import Footer from './components/Footer'
 import Error from './components/Error'
+import About from './components/About/About'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,7 +30,8 @@ function App() {
               <Route path="/categories" component={Error} />
               <Route path="/newitems" component={Error} />
               <Route path="/contact" component={Error} />
-              <Route path="/about" component={Error} /> */}
+               */}
+              <Route path="/about" component={About} />
               <Route component={Error}/>
          
     </Switch>

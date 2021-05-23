@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import FullWidthGrid from './Latestproducts'
+import Latestproducts from './Latestproducts'
 import Footer from '../Footer'
 
 
@@ -53,14 +53,8 @@ const Home = () =>{
                             </Button>
                         </div>
                     </div>
-                    <FullWidthGrid/>
-                    
-                    
-
+                    <Latestproducts/>
         </div>
-
-          
     )
 }
-
 export default Home;
