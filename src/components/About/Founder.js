@@ -19,7 +19,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    marginTop:'10px'
+    marginBottom:'10px',
   },
 });
 

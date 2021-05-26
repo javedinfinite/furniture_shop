@@ -73,7 +73,7 @@ const ButtonAppBar = () => {
 
 
   return (
-      <div style={{paddingBottom:'65px'}} >
+      <div style={{paddingBottom:'35px'}} >
       <AppBar> 
         
         <Toolbar >
