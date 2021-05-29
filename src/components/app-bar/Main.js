@@ -89,9 +89,9 @@ const ButtonAppBar = () => {
           <IconButton edge="start" component={Link} to="/offers" className={classes.appBarButton} color="inherit" aria-label="menu">
             Offers
           </IconButton>
-          <IconButton edge="start" component={Link} to="/categories" className={classes.appBarButton} color="inherit" aria-label="menu">
+          {/* <IconButton edge="start" component={Link} to="/categories" className={classes.appBarButton} color="inherit" aria-label="menu">
             Categories
-          </IconButton>
+          </IconButton> */}
           <IconButton edge="start" component={Link} to="/newitems" className={classes.appBarButton} color="inherit" aria-label="menu">
             New at Rakfurnhi
           </IconButton>

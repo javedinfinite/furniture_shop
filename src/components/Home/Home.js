@@ -16,6 +16,7 @@ const myImage = {
     height: '80vh',
     // width: '100%',
     display: 'flex',  justifyContent:'center', alignItems:'center',  
+    clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0 100%) '
      
     
   };

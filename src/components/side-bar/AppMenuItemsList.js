@@ -21,45 +21,45 @@ import IconLibraryBooks from '@material-ui/icons/LibraryBooks'
       link: '/offers',
       Icon: IconShoppingCart,
     },
-    {
-      name: 'Categories',
-      Icon: IconLibraryBooks,
-      items: [
-        {
-          name: 'Home Furniture',
-          items: [
-            {
-              name: 'Living',
-              link: '/living',
-            },
-            {
-              name: 'Bedroom',
-            },
-            {
-              name: 'Dining',
-            },
-          ],
-        },
-        {
-          name: 'Office Furniture',
-          items: [
-            {
-              name: 'Office Tables',
-              link: 'OfficeChairs',
-            },
-            {
-              name: 'Cupboards & racks',
-            },
-            {
-              name: 'Computer Tables & Study Desks',
-            },
-            {
-              name: 'Work Stations',
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   name: 'Categories',
+    //   Icon: IconLibraryBooks,
+    //   items: [
+    //     {
+    //       name: 'Home Furniture',
+    //       items: [
+    //         {
+    //           name: 'Living',
+    //           link: '/living',
+    //         },
+    //         {
+    //           name: 'Bedroom',
+    //         },
+    //         {
+    //           name: 'Dining',
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       name: 'Office Furniture',
+    //       items: [
+    //         {
+    //           name: 'Office Tables',
+    //           link: 'OfficeChairs',
+    //         },
+    //         {
+    //           name: 'Cupboards & racks',
+    //         },
+    //         {
+    //           name: 'Computer Tables & Study Desks',
+    //         },
+    //         {
+    //           name: 'Work Stations',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       name: 'New at Ragfurnhi',
       link: '/newitems',

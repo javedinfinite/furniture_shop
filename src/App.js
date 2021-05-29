@@ -25,7 +25,8 @@ function App() {
       <ButtonAppBar  /> 
       <Switch>
               <Route exact path="/" component={Home} />
-              {/* <Route path="/Products" component={Error} />
+              <Route path="/Products" component={Products} />
+              {/* 
               <Route path="/offers" component={Error} />
               <Route path="/categories" component={Error} />
               <Route path="/newitems" component={Error} />
