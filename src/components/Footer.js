@@ -63,7 +63,7 @@ export default function Footer(props) {
         </Typography>
         
         <Typography variant="subtitle1" align="center"   component="p">
-          Contact: <MailOutlineIcon  style={{ fontSize: 12 }}/> hello@rakfufnhi.com <PhoneIcon  style={{ fontSize: 12 }}/>  1234567890
+          Contact: <MailOutlineIcon  style={{ fontSize: 12 }}/> hello@rakfurnhi.com <PhoneIcon  style={{ fontSize: 12 }}/>  1234567890
         </Typography>
  
         <Copyright />

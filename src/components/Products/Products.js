@@ -64,7 +64,7 @@ export default function Products() {
             </ExpandComp>
 
         </Container>
-        <ParticlesBg color="#3f51b5" num={200} type="tadpole"   bg={true}   />
+        {/* <ParticlesBg color="#3f51b5" num={200} type="tadpole"   bg={true}   /> */}
  
 
         </div>
