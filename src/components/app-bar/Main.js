@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -25,8 +25,25 @@ const useStyles = makeStyles((theme) => ({
       },
   root: {
     flexGrow: 1,
-    backgroundColor: '#3f51b5' , //#3f51b5, blue, pink
-    color: "white",
+    // backgroundColor: 'pink' , //#3f51b5, blue, pink
+
+  },
+  appBarSolid:{
+
+    backgroundColor: 'white' ,
+    color: "#07051f",
+    boxShadow: 'none'
+
+  },
+
+  appBarTransparent:{
+    
+    color: "#07051f",
+    // color: "white",
+    // background: 'transparent',
+    boxShadow: 'none',
+    backgroundColor: 'rgba(67, 129, 168,0)'
+
   },
   appBarButton: {
     marginRight: theme.spacing(2),
@@ -53,10 +70,6 @@ const ButtonAppBar = () => {
     }
 
     setLeftMenu(menuState);
-
-
-
-
   };
 
   
@@ -71,10 +84,28 @@ const ButtonAppBar = () => {
     setAnchorEl(null);
   };
 
+  const [navBackground, setNavBackground] = useState('appBarTransparent')
+    const navRef = React.useRef()
+    navRef.current = navBackground
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 310
+            if (show) {
+                setNavBackground('appBarSolid')
+            } else {
+                setNavBackground('appBarTransparent')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
 
   return (
-      <div style={{paddingBottom:'35px'}} >
-      <AppBar> 
+      <div   >
+      <AppBar className={classes[navRef.current]} position="fixed"> 
         
         <Toolbar >
           <IconButton edge="start" onClick={toggleDrawer(true)} className={classes.showMenuButton} color="inherit" aria-label="menu">

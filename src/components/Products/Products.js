@@ -32,7 +32,7 @@ export default function Products() {
   const classes = useStyles();
 
   return (
-      <div >
+      <div style={{marginTop:'5%', marginBottom:'2%'}}>
     <Container   className={classes.cardGrid} maxWidth="lg">
  
             <ExpandComp  sectionName='Beds Section'> 
